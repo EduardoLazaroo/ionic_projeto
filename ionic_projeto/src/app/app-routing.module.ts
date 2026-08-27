@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadComponent: () => import('./page/login/login.page').then(m => m.LoginPage)
+  },
+  {
+    path: 'cadastro',
+    loadComponent: () => import('./page/cadastro/cadastro.page').then(m => m.CadastroPage)
   }
 
 ];
