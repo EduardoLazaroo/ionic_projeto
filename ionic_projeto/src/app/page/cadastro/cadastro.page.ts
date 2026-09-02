@@ -36,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     IonInput,
     IonButton,
     IonText,
-    IonSpinner
+    IonSpinner,
+    CommonModule
   ]
 })
 export class CadastroPage implements OnInit {
