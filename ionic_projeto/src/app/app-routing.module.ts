@@ -4,8 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    loadComponent: () => import('./page/landing/landing.page').then(m => m.LandingPage),
     pathMatch: 'full'
+  },
+  {
+    path: 'landing',
+    loadComponent: () => import('./page/landing/landing.page').then(m => m.LandingPage)
   },
   {
     path: 'login',
@@ -15,7 +19,6 @@ const routes: Routes = [
     path: 'cadastro',
     loadComponent: () => import('./page/cadastro/cadastro.page').then(m => m.CadastroPage)
   }
-
 ];
 @NgModule({
   imports: [

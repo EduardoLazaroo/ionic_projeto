@@ -1,0 +1,52 @@
+// Fundo da página padronizado com o restante da aplicação
+.custom-background {
+  --background: #f4f5f8;
+}
+
+// Container centralizado com limite de largura para tablets e telas maiores
+.landing-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+// Estilização do Cartão Minimalista
+.landing-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  padding: 16px 8px;
+}
+
+// Ícone de destaque do cabeçalho do card
+.hero-icon {
+  font-size: 3.5rem;
+  color: var(--ion-color-primary, #3880ff);
+  margin-bottom: 8px;
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+ion-card-subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.landing-description {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 12px 0 20px 0;
+}
+
+// Personalização de altura e borda dos botões nativos
+ion-button {
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 48px;
+}

@@ -1,0 +1,57 @@
+<!-- Cabeçalho Superior Fixo da Landing Page -->
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Portal Mobile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Conteúdo Principal Rolável -->
+<!-- 💡 class="ion-padding": utilitário nativo Ionic que aplica espaçamento interno padrão mobile -->
+<!-- 💡 class="custom-background": classe customizada no SCSS para padronização da cor de fundo -->
+<ion-content class="ion-padding custom-background">
+
+  <!-- Container centralizado para limitar largura em telas maiores (responsividade) -->
+  <div class="landing-container">
+
+    <!-- Card de Boas-Vindas minimalista utilizando recursos nativos Ionic -->
+    <ion-card class="landing-card">
+
+      <ion-card-header class="ion-text-center">
+        <!-- Ícone nativo Ionicons como destaque visual minimalista -->
+        <ion-icon name="rocket-outline" class="hero-icon"></ion-icon>
+        <ion-card-title>Bem-vindo ao Portal</ion-card-title>
+        <ion-card-subtitle>Sua plataforma moderna, simples e segura</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content class="ion-text-center">
+        <ion-text color="medium">
+          <p class="landing-description">
+            Acesse seus serviços e gerencie seus dados com praticidade em um só lugar.
+          </p>
+        </ion-text>
+
+        <!-- Botão primário para acessar tela de login -->
+        <ion-button expand="block" color="primary" class="ion-margin-top" (click)="irParaLogin()">
+          <ion-icon slot="start" name="log-in-outline"></ion-icon>
+          Acessar Sistema
+        </ion-button>
+
+        <!-- Botão secundário para ir para cadastro -->
+        <ion-button expand="block" fill="outline" color="secondary" class="ion-margin-top" (click)="irParaCadastro()">
+          <ion-icon slot="start" name="person-add-outline"></ion-icon>
+          Criar Nova Conta
+        </ion-button>
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- Rodapé minimalista com informações do sistema -->
+    <div class="ion-text-center ion-margin-top">
+      <ion-text color="medium">
+        <small>© 2026 Portal Mobile • Recursos Nativos Ionic</small>
+      </ion-text>
+    </div>
+
+  </div>
+
+</ion-content>
