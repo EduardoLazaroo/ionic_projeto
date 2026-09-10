@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -17,6 +16,7 @@ import {
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { rocketOutline, logInOutline, personAddOutline } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -48,13 +48,12 @@ export class LandingPage implements OnInit {
 
   ngOnInit() { }
 
-  // Navega para a tela de Login
-  irParaLogin() {
-    this.router.navigate(['/login']);
+  irParaLogin(){
+    this.router.navigate(['/login'])
   }
 
-  // Navega para a tela de Cadastro
-  irParaCadastro() {
-    this.router.navigate(['/cadastro']);
+
+  irParaCadastro(){
+    this.router.navigate(['/cadastro'])
   }
 }

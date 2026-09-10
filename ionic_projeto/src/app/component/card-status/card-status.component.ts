@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   IonCard,
@@ -27,6 +27,10 @@ import {
   ]
 })
 export class CardStatusComponent  implements OnInit {
+  @Input() titulo:string = 'eduardo legal';
+  @Input() subtitulo:string = '';
+  @Input() status:string = 'Normal';
+  @Input() corStatus:string = 'success';
 
   constructor() { }
 

@@ -30,17 +30,18 @@
           </p>
         </ion-text>
 
-        <!-- Botão primário para acessar tela de login -->
-        <ion-button expand="block" color="primary" class="ion-margin-top" (click)="irParaLogin()">
+        <!-- <ion-button expand="block" color="primary" class="ion-margin-top" (click)="irParaLogin()">
           <ion-icon slot="start" name="log-in-outline"></ion-icon>
           Acessar Sistema
         </ion-button>
 
-        <!-- Botão secundário para ir para cadastro -->
         <ion-button expand="block" fill="outline" color="secondary" class="ion-margin-top" (click)="irParaCadastro()">
           <ion-icon slot="start" name="person-add-outline"></ion-icon>
           Criar Nova Conta
-        </ion-button>
+        </ion-button> -->
+
+        <ion-button (click)="irParaLogin()">Ir para Login</ion-button>
+        <ion-button (click)="irParaCadastro()">Ir para Cadastro</ion-button>
       </ion-card-content>
 
     </ion-card>
