@@ -29,7 +29,7 @@ import { Router } from '@angular/router';
   imports: [
     CommonModule,
     FormsModule,
-    CardStatusComponent,
+    CardStatusComponent,    
     IonContent,
     IonHeader,
     IonTitle,
@@ -54,5 +54,9 @@ export class LoginPage implements OnInit {
 
   irParaCadastro(){
     this.router.navigate(['/cadastro'])
+  }
+
+  entrarComId(idUsuario: number){
+    this.router.navigate(['/detalhes', idUsuario])
   }
 }
